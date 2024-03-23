@@ -1,0 +1,499 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+
+  box-sizing: border-box;
+  font-family: "Gabarito", sans-serif;
+}
+.logo img {
+	max-height:80px;
+}
+body {
+  background: #f0faff;
+}
+.nav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 200px;
+  background: #2B2E63;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.nav,
+.nav .nav-links {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+.nav {
+  justify-content: space-between;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.routemap {
+    text-align: center;
+    display:inline-block;
+    width: 40%;
+    
+    
+}
+.routemap img {
+	 width: 60%;  
+	 height: 60%;
+}
+.welcomeName {
+	color: white;
+	height: 50%;
+	width: 50%;
+}
+
+.button {
+  background-color: #2B2E63;
+  border: 2px solid #2B2E63;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  margin: 25px 25px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 300px;
+  height: 100px;
+}
+
+.button1 {
+  background-color: #2B2E63; 
+  color: white; 
+}
+.button1:hover {
+  background-color: #f0faff;
+  color: black;
+  border: 2px solid #2B2E63;
+}
+.nav .nav-links {
+  column-gap: 40px;
+  list-style: none;
+}
+.nav .nav-links a {
+  transition: all 0.2s linear;
+}
+.nav .navOpenBtn,
+.nav .navCloseBtn {
+  display: none;
+  
+}
+
+	.website-name {
+		font-size: 65px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.routehistory-title {
+		font-size: 50px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.routehistory-text {
+		font-size: 24px;
+		color: #555;
+		text-align: left;
+		padding-left: 50px;
+		padding-right:50px;
+	}
+	.infrastructure-text {
+		font-size: 24px;
+		color: #555;
+		text-align: left;
+		padding-left: 50px;
+		padding-right:50px;
+	}
+	.infsingleimg img {
+	    width: 700px;
+	    height: 500px;
+	}
+	.infdoubleimg img {
+	    width: 500px;
+	    height: 700px;
+	}
+	.tagline {
+		font-size: 38px;
+		color: #555;
+		text-align: center;
+	}
+	.secondarytitle {
+		font-size: 38px;
+		color: #555;
+		text-align: center;
+	}
+	.routehistory-secondarytitle {
+		font-size: 38px;
+		color: #555;
+		text-align: center;
+	}
+	.secondarytitle a {
+		color: #555;
+		text-decoration: none;
+	}	
+	.copyrighthome {
+		position: absolute;
+		bottom: 0;
+		font-size: 24px;
+		color: #555;
+		text-align: center;
+		text-decoration: none;
+	}
+	.copyright {
+	    padding-top: 50px;
+		font-size: 24px;
+		color: #555;
+		text-align: center;
+		text-decoration: none;
+	}
+	.bottombuttons {
+	    padding-top: 40px;
+		font-size: 24px;
+		color: #555;
+		text-align: center;
+		text-decoration: none;
+	}
+	.bottombuttons a {
+	    color: #555;
+	}
+	.social-media img {
+	    width: 100px;
+	    margin: 15px;
+    }
+	.maintext {
+	    padding-top: 40px;
+		font-size: 24px;
+		color: #555;
+		text-align: center;
+	}
+	.phototable {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		border: 1px solid;
+  		border-collapse: collapse;
+  		width: 80%;
+  		font-size: 20px;
+	}
+	.phototable, td, th {
+		border: 1px solid;	
+		height: 80px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.phototable img {
+		width: 240px;
+		height: 159px;
+	}
+	.dates {
+		font-size: 24px;	
+	}
+	.descriptionRH a {
+	    color: #555;
+	}
+/* responsive */
+@media screen and (max-width: 1160px) {
+  .nav {
+    padding: 15px 100px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .nav {
+    padding: 15px 50px;
+  }
+	.website-name {
+		font-size: 55px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.routehistory-title {
+		font-size: 45px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.routehistory-text {
+		font-size: 18px;
+		text-align: left;
+	}
+	.infrastructure-text {
+		font-size: 18px;
+		text-align: left;
+	}	
+	.tagline {
+		font-size: 28px;
+		color: #555;
+		text-align: center;
+	}
+	.copyrighthome {
+		position: absolute;
+		bottom: 0;
+		font-size: 18px;
+		color: #555;
+		text-align: center;
+		text-decoration: none;
+	}
+	.routehistory-secondarytitle {
+		font-size: 30px;
+		color: #555;
+		text-align: center;
+	}
+	.copyright {
+	    padding-top: 50px;
+		font-size: 18px;
+		color: #555;
+		text-align: center;
+		text-decoration: none;
+	}
+    .social-media img {
+        width: 80px; /* Change the size as needed for smaller screens */
+        margin: 15px;
+    }
+	.maintext {
+		font-size: 18px;
+	}
+    .phototable {
+  		font-size: 16px;
+	}
+	.phototable, td, th {
+		border: 1px solid;	
+		height: 80px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.phototable img {
+		width: 180px;
+		height: 119px;
+	}
+	.dates {
+		font-size: 20px;	
+	}
+	.bottombuttons {
+	    padding-top: 40px;
+		font-size: 20px;
+		color: #555;
+		text-align: center;
+		text-decoration: none;
+	}
+	.infsingleimg img {
+	    width: 500px;
+	    height: 350px;
+	}
+	.infdoubleimg img {
+	    width: 350px;
+	    height: 500px;
+	}
+}
+@media screen and (max-width: 820px) {
+  .nav .navOpenBtn,
+  .nav .navCloseBtn {
+    display: block;
+  }
+  .nav {
+    padding: 15px 20px;
+  }
+  .nav .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    max-width: 280px;
+    width: 100%;
+    padding-top: 100px;
+    row-gap: 30px;
+    flex-direction: column;
+    background-color: #11101d;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+
+  }
+  .nav.openNav .nav-links {
+    left: 0;
+  }
+  .nav .navOpenBtn {
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .nav .navCloseBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+	.website-name {
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.routehistory-title {
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.routehistory-text {
+		font-size: 15px;
+		text-align: left;
+	}
+	.infrastructure-text {
+		font-size: 15px;
+		text-align: left;
+	}
+	.tagline {
+		font-size: 18px;
+		color: #555;
+		text-align: center;
+	}
+	.copyrighthome {
+		position: absolute;
+		bottom: 0;
+		font-size: 13px;
+		color: #555;
+		text-align: center;
+		text-decoration: none;
+	}
+	.copyright {
+	    padding-top: 50px;
+	    padding-bottom: 0px;
+		font-size: 13px;
+		color: #555;
+		text-align: center;
+		text-decoration: none;
+	}
+    .social-media img {
+        width: 65px; /* Change the size as needed for even smaller screens */
+        margin: 10px;
+    }
+  
+	.maintext {
+	    padding-top: 10px;
+		font-size: 13px;  
+	}
+	.secondarytitle {
+		font-size: 30px;
+		color: #555;
+		text-align: center;
+	}
+	.routehistory-secondarytitle {
+		font-size: 25px;
+		color: #555;
+		text-align: center;
+	}
+    .button {
+        width: 250px;
+        height: 100px;
+        font-size: 20px;
+    }
+    .phototable {
+  		font-size: 14px;
+	}
+	.description {
+	    font-size: 0px;
+	}
+
+	.phototable, td, th {
+		border: 1px solid;	
+		height: 80px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.phototable img {
+		width: 120px;
+		height: 79px;
+	}
+	.dates {
+		font-size: 18px;	
+	}
+	.bottombuttons {
+	    padding-top: 40px;
+		font-size: 18px;
+		color: #555;
+		text-align: center;
+		text-decoration: none;
+	}
+	.infsingleimg img {
+	    width: 400px;
+	    height: 280px;
+	}
+	.infdoubleimg img {
+	    width: 280px;
+	    height: 400px;
+	}
+}
+.container {
+    position: relative;
+    top: 175px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100vh;
+}
+
+.containerhome {
+    position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.maintext a {
+	color: #555;
+}
+.copyrighthome a {
+	color: #555;
+}
+.copyright a {
+	color: #555;
+}
+.social-media {
+	text-decoration: none;
+}
+body {
+	font-family: Arial, sans-serif;
+}
+
+#chat-container {
+	overflow-y: scroll;
+	height: 400px;
+}
+
+.message-container {
+	margin-bottom: 10px;
+}
+
+.user-message {
+	background-color: #007bff;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	margin-left: 40%;
+	text-align: right;
+}
+
+.bot-message {
+	background-color: #e9ecef;
+	border-radius: 10px;
+	padding: 10px;
+	margin-right: 40%;
+	text-align: left;
+}
+
+.iframe {
+	height: 100%;
+	width:100%;
+}
+.button {
+        color: blue;
+}

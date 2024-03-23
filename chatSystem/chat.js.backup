@@ -1,0 +1,29 @@
+function sendMessage() {
+    var userInput = document.getElementById("user-input").value;
+    var chatContainer = document.getElementById("chat-container");
+    document.getElementById("user-input").value = ""; // Clear the input box
+    
+    // Displaying user message immediately
+    chatContainer.innerHTML += "<div class='message-container'><div class='user-message'>" + userInput + "</div></div>";
+
+    // Displaying an ellipsis while waiting for response
+    chatContainer.innerHTML += "<div class='message-container'><div class='bot-message'>...</div></div>";
+
+    fetch('http://68.146.5.150:5000/api', {  
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({message: userInput})
+    })
+    .then(response => response.text())
+    .then(data => {
+        // Replace ellipsis with server response
+        var lastMessageContainer = chatContainer.lastElementChild;
+        lastMessageContainer.innerHTML = "<div class='bot-message'>" + data + "</div>";
+
+        // Auto-scroll to the bottom
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+    });
+}
+
