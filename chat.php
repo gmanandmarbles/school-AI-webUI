@@ -28,6 +28,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       <i class="uil uil-bars navOpenBtn"></i>
             <div class="logo">
                 <img src="<?php echo htmlspecialchars($_SESSION["school"]); ?>.png" alt="Logo">
+		    <script>
+    console.log("<?php echo $_SESSION["school"]; ?>");
+</script>
 
             </div>
       <ul class="nav-links">
