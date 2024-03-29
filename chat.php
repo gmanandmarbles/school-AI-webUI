@@ -30,6 +30,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <img src="logo.png" alt="Logo">
 		    <script>
     console.log("<?php echo $_SESSION["school"]; ?>");
+			    alert("<?php echo $_SESSION["school"]; ?>");
 </script>
 
             </div>
